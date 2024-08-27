@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-principal: #ecf8fd;
+    --color-texto2 : #413381;
+    --fuente-montzerrat : "Montserrat", sans-serif; 
+    --fuente-krona : "Krona One", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-principal)
+}
+
+.logo{
+    padding-top: 15px;
+    width: 100px;
+    height: 30px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.seccionIngreso{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+    margin-left: 100px;
+}
+
+.textoIngreso{
+    width: auto;
+    height: 430px;
+    font-family: var(--fuente-krona);
+    font-size:12px;
+    border-radius: 10px;
+    padding: 9px;
+
+}
+
+.info{
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+}
+
+.btnArea{
+    display: flex;
+    gap: 24px;
+    padding: 20px;
+}
+
+.btn{
+    border-radius: 24px;
+    height: 60px;
+    width: 300px;
+    height: Hug (67px)px;
+    font-family: var(--fuente-krona);
+}
+
+.btnEncrip {
+    background-color:#011e31;
+    color: #fff;
+}
+.btnEncrip:hover{
+    color: #3b4e73;
+    background-color: #ecf8fd;
+}
+.btnDesencrip {
+    border-color: #011e31;
+    color: #3b4e73;
+}
+.btnCopiar{
+    margin-top: 10px;
+    border-color: #011e31;
+    color: #3b4e73;
+}
+.btnDesencrip:hover{
+    background-color: #3b4e73;
+    color: #ecf8fd;
+}
+.btnCopiar:hover{
+    background-color: #3b4e73;
+    color: #ecf8fd;
+}
+
+.seccionSalida{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+}
+.textoEncrip{
+    color: var(--color-texto2);
+    height: 540px;
+    width: 50%;
+    padding: 10px;
+    font-family: var(--fuente-krona);
+    background-image: url(assets/alura.png);
+    /* background-image: center; */
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 90%; 
+    font-size:12px;
+    border-radius: 10px;  
+}
+
+.textoEncrip:not(:placeholder-shown) {
+    background-image: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #011e31;
+    padding: 10px;
+    text-align: center;
+}
+
+@media(max-width: 780px){
+
+.textoIngreso{
+    width: auto;
+    height: 430px;
+    font-family: var(--fuente-krona);
+    font-size:12px;
+    border-radius: 10px;
+    padding: 9px;
+   
+}
+.seccionIngreso{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+    margin-left: 10px;
+}
+.btnArea{
+    display: flex;
+    gap: 24px;
+    padding: 10px;
+}
+
+.btn{
+    border-radius: 24px;
+    height: 40px;
+    width: 100px;
+    height: Hug (67px)px;
+    font-family: var(--fuente-krona);
+}
+.textoEncrip{
+    color: var(--color-texto2);
+    height: 100px;
+    width: 50%;
+    padding: 10px;
+    font-family: var(--fuente-krona);
+
+    background-size: 90%; 
+    font-size:12px;
+    border-radius: 10px;  
+}
+}
